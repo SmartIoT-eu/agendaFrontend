@@ -4,6 +4,49 @@ html(lang="es")
         meta(charset="UTF-8")
         meta(name="viewport" content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible" content="ie=edge")
-        title Agenda
+        link(rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons")
+        link(href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet")
+        link(rel="stylesheet" href="./css/styles.css")
+        title pageTitle
     body
-        p Hola mundo
+        .main
+            header.header Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, veniam!
+            aside.aside
+                .agenda
+                    ul
+                        li
+                            a(href="#")
+                                i.material-icons.md-dark inbox
+                                | Bandeja de entrada
+                        li.marked
+                            a(href="#")
+                                i.material-icons.md-dark today
+                                | Hoy
+                        li
+                            a(href="#")
+                                i.material-icons.md-dark view_week
+                                | Próximos 7 días
+                hr
+
+                .lists
+                    ul
+                        li
+                            a(href="#")
+                                i.material-icons.md-dark shopping_cart
+                                | Lista de la compra
+                        li
+                            a(href="#")
+                                i.material-icons.md-dark add
+                                | Nueva lista
+            main.content
+                .date
+                    h1 Hoy
+                    span.day sáb. 28 de Sep
+                br
+                each numbers in [151912, 151913, 151914, 151915]
+                    label(for=numbers)
+                        input(type="checkbox" id=numbers)
+                        | Lorem ipsum dolor sit amet.
+                    br
+                
+            footer.footer Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, illum!

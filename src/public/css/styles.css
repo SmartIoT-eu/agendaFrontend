@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a .material-icons {
+  position: relative;
+  top: 5px;
+}
+
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: "liga";
+  /* Rules for sizing the icon. */
+}
+.material-icons .md-18 {
+  font-size: 18px;
+}
+.material-icons .md-24 {
+  font-size: 24px;
+}
+.material-icons .md-36 {
+  font-size: 36px;
+}
+.material-icons .md-48 {
+  font-size: 48px;
+}
+.material-icons .md-dark {
+  color: rgba(0, 0, 0, 0.54);
+}
+.material-icons .md-dark .md-inactive {
+  color: rgba(0, 0, 0, 0.26);
+}
+.material-icons .md-light {
+  color: white;
+}
+.material-icons .md-light .md-inactive {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+body {
+  background-color: #FAFAFA;
+  font-family: "Roboto", sans-serif;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr 2fr 1fr;
+}
+.main .header {
+  background: red;
+  grid-column: 1/7;
+}
+.main .aside {
+  background: #F3F3F3;
+  grid-column: 2/3;
+  padding: 10px;
+}
+.main .aside hr {
+  border: solid 1px black;
+  width: 80%;
+  margin: 0 auto;
+}
+.main .aside li {
+  list-style: none;
+  margin-bottom: 7px;
+  width: 100%;
+}
+.main .aside li:hover {
+  background: white;
+}
+.main .aside li a {
+  width: 100%;
+  text-decoration: none;
+  border-radius: 5px;
+  color: black;
+}
+.main .content {
+  padding: 10px;
+  background: #FFFFFF;
+  grid-column: 3/6;
+}
+.main .content .date {
+  display: block;
+}
+.main .content .date h1 {
+  display: inline;
+}
+.main .content .date span {
+  font-size: 0.9em;
+  position: relative;
+  top: 5px;
+}
+.main .content label input:checked {
+  text-decoration: dashed;
+}
+.main .footer {
+  background: yellow;
+  grid-column: 1/7;
+  height: 50px;
+}
+
+.marked {
+  background: #FFFFFF;
+  color: black;
+  width: 100%;
+}
+
+/*# sourceMappingURL=styles.css.map */
