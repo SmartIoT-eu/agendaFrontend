@@ -7,11 +7,22 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
-    <title>pageTitle</title>
+    <title>Agenda</title>
   </head>
   <body>
     <div class="main">
-      <header class="header">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, veniam!</header>
+      <header class="header">
+        <div id="headerContent">
+          <div class="searchBox">
+            <div class="inputWithIcon"><i class="material-icons md-dark">search</i>
+              <input type="text" placeholder="Búsqueda rápida">
+            </div>
+          </div>
+          <div class="newTask">
+            <button><i class="material-icons md-dark">add</i></button>
+          </div>
+        </div>
+      </header>
       <aside class="aside">
         <div class="agenda">
           <ul>
@@ -30,22 +41,26 @@
       </aside>
       <main class="content">
         <div class="date">
-          <h1>Hoy</h1><span class="day">sáb. 28 de Sep</span>
+          <h1>Hoy</h1><span class="day">mié. 09 de Oct</span>
         </div><br>
-        <label for="151912">
-          <input type="checkbox" id="151912">Lorem ipsum dolor sit amet.
-        </label><br>
-        <label for="151913">
-          <input type="checkbox" id="151913">Lorem ipsum dolor sit amet.
-        </label><br>
-        <label for="151914">
-          <input type="checkbox" id="151914">Lorem ipsum dolor sit amet.
-        </label><br>
-        <label for="151915">
-          <input type="checkbox" id="151915">Lorem ipsum dolor sit amet.
-        </label><br>
+        <div class="listTask">
+          <input type="checkbox" id="151912">
+          <label for="151912"><span>Lorem ipsum dolor sit amet.</span></label>
+        </div><br>
+        <div class="listTask">
+          <input type="checkbox" id="151913">
+          <label for="151913"><span>Lorem ipsum dolor sit amet.</span></label>
+        </div><br>
+        <div class="listTask">
+          <input type="checkbox" id="151914">
+          <label for="151914"><span>Lorem ipsum dolor sit amet.</span></label>
+        </div><br>
+        <div class="listTask">
+          <input type="checkbox" id="151915">
+          <label for="151915"><span>Lorem ipsum dolor sit amet.</span></label>
+        </div><br>
       </main>
-      <footer class="footer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, illum!</footer>
+      <footer class="footer"><span>&copy; 2019 SmartIoT</span></footer>
     </div>
   </body>
 </html>
