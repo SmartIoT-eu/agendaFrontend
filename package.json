@@ -1,0 +1,24 @@
+{
+  "name": "agendafrontend",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "pug": "^2.0.4",
+    "pug-cli": "^1.0.0-alpha6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SmartIoT-eu/agendaFrontend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SmartIoT-eu/agendaFrontend/issues"
+  },
+  "homepage": "https://github.com/SmartIoT-eu/agendaFrontend#readme"
+}
