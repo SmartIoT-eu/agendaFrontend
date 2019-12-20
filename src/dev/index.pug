@@ -1,9 +1,55 @@
 doctype html
 html(lang="es")
-    head
-        meta(charset="UTF-8")
-        meta(name="viewport" content="width=device-width, initial-scale=1.0")
-        meta(http-equiv="X-UA-Compatible" content="ie=edge")
-        title Agenda
+    include ./includes/head.pug
     body
-        p Hola mundo
+        .main
+            header.header
+                #headerContent
+                    .searchBox
+                        .inputWithIcon
+                            i.material-icons.md-dark search
+                            input(type="text" placeholder="Búsqueda rápida")
+                    .newTask
+                        button
+                            i.material-icons.md-dark add
+            aside.aside
+                .agenda
+                    ul
+                        li
+                            a(href="#")
+                                i.material-icons.md-dark inbox
+                                | Bandeja de entrada
+                        li.marked
+                            a(href="#")
+                                i.material-icons.md-dark today
+                                | Hoy
+                        li
+                            a(href="#")
+                                i.material-icons.md-dark view_week
+                                | Próximos 7 días
+                hr
+
+                .lists
+                    ul
+                        li
+                            a(href="#")
+                                i.material-icons.md-dark shopping_cart
+                                | Lista de la compra
+                        li
+                            a(href="#")
+                                i.material-icons.md-dark add
+                                | Nueva lista
+            main.content
+                .date
+                    h1 Hoy
+                    span.day mié. 09 de Oct
+                br
+                each numbers in [151912, 151913, 151914, 151915]
+                    .listTask
+                        input(type="checkbox" id=numbers)
+                        label(for=numbers)
+                            span Lorem ipsum dolor sit amet.
+                    br
+                
+            footer.footer
+                span &copy; 2019 SmartIoT
